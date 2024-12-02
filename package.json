@@ -1,0 +1,18 @@
+{
+  "name": "tabtasker",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "watch": "webpack --config webpack.config.js --watch"
+  },
+  "dependencies": {
+    "@langchain/core": "^0.1.48",
+    "@langchain/groq": "^0.0.3",
+    "langchain": "^0.3.6"
+  },
+  "devDependencies": {
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4"
+  }
+}

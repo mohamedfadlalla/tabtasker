@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TabTasker</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="popup-container">
+        <div class="header">
+            <h1>TabTasker</h1>
+            <div class="mode-toggle">
+                <label class="switch">
+                    <input type="checkbox" id="modeToggle">
+                    <span class="slider"></span>
+                </label>
+                <span class="mode-label">Custom Mode</span>
+            </div>
+        </div>
+
+        <div id="customModeContainer" class="hidden">
+            <div class="project-input">
+                <input type="text" id="projectName" placeholder="Project name">
+                <textarea id="projectDescription" placeholder="Project description (optional)"></textarea>
+                <button id="addProject" class="button primary">Add Project</button>
+            </div>
+            <div class="projects-list" id="projectsList">
+                <!-- Projects will be added here dynamically -->
+            </div>
+        </div>
+
+        <div class="actions">
+            <button id="groupTabs" class="action-button">Group Similar Tabs</button>
+            <button id="visualizeData" class="action-button">Visualize Data</button>
+        </div>
+
+        <div id="status" class="status"></div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
